@@ -29,14 +29,8 @@ int Third = new Random().Next(0, 11); // две первые переменны�
 Console.WriteLine($"3е число : {Third}"); 
 int max = First;
 
-if(max < Second)
-{
-    max = Second;
-}
-if (max < Third)
-{
-    max = Third;
-}
+if (max < Second) max = Second;
+if (max < Third) max = Third;
 
 Console.WriteLine($"Максимальное число {max}");
 
@@ -73,10 +67,7 @@ if(First != 0) // проверка на 0, так же буду исчпольз
 {
     while(i < (First + 1)) // + 1 для того что бы было включительно
     {
-        if((i % 2) == 0)
-        {
-            Console.Write($"{i} "); // $ для пробелов между числами
-        }
+        if((i % 2) == 0) Console.Write($"{i} "); // $ для пробелов между числами
         i = i + 1;
     }
 }
