@@ -25,14 +25,15 @@ Console.ReadLine();
 
 
 // Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-int Third = new Random().Next(0, 11); // две первые переменные уже есть 
+int Third = new Random().Next(0, 11); // две первые переменные уже есть
+Console.WriteLine($"3е число : {Third}"); 
 int max = First;
 
 if(max < Second)
 {
     max = Second;
 }
-else if(max < Third)
+if (max < Third)
 {
     max = Third;
 }
@@ -46,7 +47,11 @@ Console.ReadLine();
 
 
 // Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
-if((First % 2) == 0) // буду работать с существующей переменной
+if(First == 0)
+{
+    Console.WriteLine("0 не подходит");
+}
+else if((First % 2) == 0) // буду работать с существующей переменной
 {
     Console.WriteLine($"{First} четное");
 }
