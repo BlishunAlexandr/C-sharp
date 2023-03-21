@@ -25,6 +25,3 @@ while(true)
     if(Num % 10 == 0) break;
 }
 Console.WriteLine($"Получается {Result}");
-
-
-
